@@ -3,7 +3,10 @@ import os
 import pathlib
 
 from flask import Flask, render_template, request
+
+# pylint error due to something about venv path idk
 from api import fetch_summoner_data
+
 
 app = Flask(__name__)
 
